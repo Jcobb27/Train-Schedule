@@ -1,0 +1,45 @@
+body, html {
+    height: 100%;
+}
+
+.bg { 
+    /*  image used */
+    background-image: url("images/train\ bg2.jfif");
+
+    /* Full height */
+    height: 150%; 
+
+    /* Center and scale the image */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#jumbo {
+    opacity: 0.9;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+#schedule {
+    opacity: 0.95;
+}
+
+#add-train {
+    margin-top: 30px;
+    opacity: 0.95;
+}

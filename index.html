@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Train Schedule</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Bootstrap CDN-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <!--JQuery-->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="logic.js"></script>
+</head>
+
+<body>
+    <div class="bg">
+        <div class="container">
+            <div class="jumbotron jumbotron-fluid" id="jumbo">
+                <div class="container">
+                    <h1 class="display-4">Train time!</h1>
+                    <p class="lead">Add a train to calculate its next arrival!</p>
+                </div>
+            </div>
+            <div class="card" id="schedule">
+                <h5 class="card-header">Current Train Schedule</h5>
+                <div class="card-body">
+                    <table>
+                        <tr>
+                            <th>Train Name</th>
+                            <th>Destination</th>
+                            <th>Frequency (min)</th>
+                            <th>Next Arrival</th>
+                            <th>Minutes Away</th>
+                        </tr>
+                        <tr>
+                            <td>Trenton Express</td>
+                            <td>Trenton</td>
+                            <td>20</td>
+                            <td>3:30 PM</td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td>Oregon Trail</td>
+                            <td>Salem, Oregon</td>
+                            <td>45</td>
+                            <td>4:00 PM</td>
+                            <td>20</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="card" id="add-train">
+                <h5 class="card-header">Add Train</h5>
+                <div class="card-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="trainName">Train Name</label>
+                            <input type="text" class="form-control" id="trainName">
+                        </div>
+                        <div class="form-group">
+                            <label for="destination">Destination</label>
+                            <input type="text" class="form-control" id="destination">
+                        </div>
+                        <div class="form-group">
+                            <label for="destination">First Train Time (HH:mm - military time)</label>
+                            <input type="text" class="form-control" id="destination">
+                        </div>
+                        <div class="form-group">
+                            <label for="destination">Frequency (min)</label>
+                            <input type="text" class="form-control" id="destination">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
