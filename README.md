@@ -4,4 +4,4 @@ Created by Jennifer Cobb using HTML, CSS, JQuery, Firebase, and Moment.js. Fireb
 # Instructions
 In the "Add Train" form, type in a "Train Name", "Destination", "First Train Time", and "Frequency". Then click submit to see the new train added to the train schedule, with the "next arrival" and "minutes away" calculated based on the current time.
 
-![Screenshot](https://raw.githubusercontent.com/Jcobb27/train-schedule/master/images/screenshot.png)
+![Screenshot](images/screenshot.png)
