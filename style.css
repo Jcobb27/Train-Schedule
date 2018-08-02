@@ -6,17 +6,23 @@ body, html {
     /*  image used */
     background-image: url("images/train\ bg2.jfif");
 
-    /* Full height */
-    height: 150%; 
-
     /* Center and scale the image */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
+.container {
+    padding-bottom: 30px;
+}
+
+.card-header {
+    background-color: rgb(255, 204, 64);
+}
+
 #jumbo {
     opacity: 0.9;
+    text-align: center;
 }
 
 table {
@@ -36,10 +42,10 @@ tr:nth-child(even) {
 }
 
 #schedule {
-    opacity: 0.95;
+    opacity: 0.9;
 }
 
 #add-train {
     margin-top: 30px;
-    opacity: 0.95;
+    opacity: 0.9;
 }
