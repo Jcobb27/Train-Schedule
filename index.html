@@ -15,6 +15,8 @@
     <!--JQuery-->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
+    <!-- Added Moment JS -->
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
     <script src="logic.js"></script>
 </head>
 
@@ -30,7 +32,8 @@
             <div class="card" id="schedule">
                 <h5 class="card-header">Current Train Schedule</h5>
                 <div class="card-body">
-                    <table>
+                    <table id="train-table">
+                        <thead>
                         <tr>
                             <th>Train Name</th>
                             <th>Destination</th>
@@ -38,20 +41,8 @@
                             <th>Next Arrival</th>
                             <th>Minutes Away</th>
                         </tr>
-                        <tr>
-                            <td>Trenton Express</td>
-                            <td>Trenton</td>
-                            <td>20</td>
-                            <td>3:30 PM</td>
-                            <td>10</td>
-                        </tr>
-                        <tr>
-                            <td>Oregon Trail</td>
-                            <td>Salem, Oregon</td>
-                            <td>45</td>
-                            <td>4:00 PM</td>
-                            <td>20</td>
-                        </tr>
+                    </thead>
+                    <tbody></tbody>
                     </table>
                 </div>
             </div>
